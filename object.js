@@ -27,3 +27,10 @@ person = {
 //     return this.fname + " " + this.lname;
 // }
 // console.log(person.name());
+
+// var myArray = Object.values(person);  //JavaScript object can be converted to an array
+
+// var myString = JSON.stringify(person); //converted to a string
+
+
+console.log(person);

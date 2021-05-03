@@ -23,7 +23,7 @@ person = {
 // var x = message.toUpperCase();  //Using Built-In Methods
 // console.log(x);
 
-person.name = function() {
-    return this.fname + " " + this.lname;
-}
-console.log(person.name());
+// person.name = function() {          //Adding a Method to an Object
+//     return this.fname + " " + this.lname;
+// }
+// console.log(person.name());

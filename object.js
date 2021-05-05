@@ -2,6 +2,7 @@ person = {
         fname: "Mohammad",
         lname: "Belal",
         age: 32,
+        language: "Bangla",
         // fullName: function() {
         //     return this.fname + " " + this.lname
         // }
@@ -32,5 +33,25 @@ person = {
 
 // var myString = JSON.stringify(person); //converted to a string
 
+// person2 = {
+//     fname: "Mohammad",
+//     lname: "Belal",
+//     age: 32,
+//     language: "Bangla",           //Getter
+//     get useGetter() {
+//             return this.language;
+//         }
+// }
+// console.log(person.useGetter);
 
-console.log(person);
+person3 = {
+    fname: "Mohammad",
+    lname: "Belal",
+    age: 32,
+    language: "Bangla",
+    set useSetter(lang) {
+        this.language = lang;
+    }
+}
+person3.useSetter = "English";
+console.log(person3.language);

@@ -63,8 +63,46 @@ function person_constructors(fname, lname, age, nationality) {
     this.lastName = lname;
     this.age = age;
     this.nationality = nationality;
+    this.weight = "56 KG";
+    this.fullName = function() {
+        return this.firstName + " " + this.lastName
+    };
+    this.changeName = function(name) {
+        this.lastName = name;
+    };
 }
 
 var myFather = new person_constructors("Motaleb", "Mridha", 56, "Bangladeshi");
-console.log("My father name is " + myFather.firstName + " " + myFather.lastName + "." +
-    " He is " + myFather.age + " years old " + myFather.nationality);
+var myMother = new person_constructors("Khadeja", "Khatun", 51, "Bangladeshi");
+
+console.log(myMother.weight);
+console.log(myFather.weight);
+
+myFather.height = "5 fit 6 inch"; //Adding a Property to an Object
+
+// console.log("My father name is " + myFather.firstName + " " + myFather.lastName + "." +
+//     " He is " + myFather.age + " years old " + myFather.nationality + " and There height is " + myFather.height);
+
+// myFather.fullName = function() {                                  //Adding a Method to an Object rule_01
+//     return myFather.firstName + " " + myFather.lastName;
+// }
+
+// myFather.fullName = function() { //Adding a Method to an Object rule_02
+//     return this.firstName + " " + this.lastName;
+// }
+
+// console.log(myFather.fullName());
+// console.log(myMother.fullName());
+
+myMother.changeName("Poly");
+
+console.log(myMother.lastName);
+
+person_constructors.prototype.eyeColor = " Black"; //object prototype
+console.log(myFather.eyeColor);
+
+person_constructors.prototype.realName = function() {
+    return this.firstName + " " + this.lastName;
+};
+
+console.log(myMother.realName());

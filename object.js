@@ -44,14 +44,27 @@ person = {
 // }
 // console.log(person.useGetter);
 
-person3 = {
-    fname: "Mohammad",
-    lname: "Belal",
-    age: 32,
-    language: "Bangla",
-    set useSetter(lang) {
-        this.language = lang;
-    }
+// person3 = {
+//     fname: "Mohammad",
+//     lname: "Belal",
+//     age: 32,
+//     language: "Bangla",
+//     set useSetter(lang) {
+//         this.language = lang;
+//     }
+// }
+// person3.useSetter = "English";
+// console.log(person3.language);
+
+// object constructors
+
+function person_constructors(fname, lname, age, nationality) {
+    this.firstName = fname;
+    this.lastName = lname;
+    this.age = age;
+    this.nationality = nationality;
 }
-person3.useSetter = "English";
-console.log(person3.language);
+
+var myFather = new person_constructors("Motaleb", "Mridha", 56, "Bangladeshi");
+console.log("My father name is " + myFather.firstName + " " + myFather.lastName + "." +
+    " He is " + myFather.age + " years old " + myFather.nationality);

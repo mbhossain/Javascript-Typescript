@@ -26,24 +26,56 @@
 
 //class inheritance
 
+// class Car {
+//     constructor(brand) {
+//         this.carname = brand;
+//     }
+//     present() {
+//         return 'I have a ' + this.carname;
+//     }
+// }
+
+// class Model extends Car { //Use the "extends" keyword to inherit all methods from another class.
+//     constructor(brand, mod) {
+//         super(brand); //Use the "super" method to call the parent's constructor function.
+//         this.model = mod;
+//     }
+//     show() {
+//         return this.present() + ', it is a ' + this.model;
+//     }
+// }
+
+// let myCar = new Model("Ford", "Mustang");
+// console.log(myCar.show());
+
+//class static
+
+// class Car {
+//     constructor(name) {
+//         this.name = name;
+//     }
+//     static hello() {
+//         return "Hello!!";
+//     }
+// }
+
+// let myCar = new Car("Ford");
+
+// // You can calll 'hello()' on the Car Class:
+// console.log(Car.hello());
+
+// // But NOT on a Car Object:
+// // document.getElementById("demo").innerHTML = myCar.hello();
+// // this will raise an error.
+
 class Car {
-    constructor(brand) {
-        this.carname = brand;
+    constructor(name) {
+        this.name = name;
     }
-    present() {
-        return 'I have a ' + this.carname;
-    }
-}
-
-class Model extends Car { //Use the "extends" keyword to inherit all methods from another class.
-    constructor(brand, mod) {
-        super(brand); //Use the "super" method to call the parent's constructor function.
-        this.model = mod;
-    }
-    show() {
-        return this.present() + ', it is a ' + this.model;
+    static hello(x) {
+        return "Hello " + x.name;
     }
 }
 
-let myCar = new Model("Ford", "Mustang");
-console.log(myCar.show());
+let myCar = new Car("Ford");
+console.log(Car.hello(myCar));

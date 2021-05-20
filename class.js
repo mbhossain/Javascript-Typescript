@@ -68,14 +68,14 @@
 // // document.getElementById("demo").innerHTML = myCar.hello();
 // // this will raise an error.
 
-class Car {
-    constructor(name) {
-        this.name = name;
-    }
-    static hello(x) {
-        return "Hello " + x.name;
-    }
-}
+// class Car {
+//     constructor(name) {
+//         this.name = name;
+//     }
+//     static hello(x) {
+//         return "Hello " + x.name;
+//     }
+// }
 
-let myCar = new Car("Ford");
-console.log(Car.hello(myCar));
+// let myCar = new Car("Ford");
+// console.log(Car.hello(myCar));

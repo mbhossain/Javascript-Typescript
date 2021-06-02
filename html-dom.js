@@ -16,3 +16,21 @@ function mOver(obj) {
 function mOut(obj) {
     obj.innerHTML = "Mouse Over Me"
 }
+
+
+//https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_usecapture
+alert(("myP1").addEventListener("click", function() {
+    alert("You clicked the white element!");
+}, false));
+
+alert(("myDiv1").addEventListener("click", function() {
+    alert("You clicked the orange element!");
+}, false));
+
+alert(("myP2").addEventListener("click", function() {
+    alert("You clicked the white element!");
+}, true));
+
+alert(("myDiv2").addEventListener("click", function() {
+    alert("You clicked the orange element!");
+}, true));

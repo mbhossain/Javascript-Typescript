@@ -24,7 +24,36 @@ var number = [10, 20, 30, 40];
 // console.log(squareNumber);
 
 //forEach:04
-number.forEach(function(x, index, arr) {
-    arr[index] = x + 5;
+// number.forEach(function(x, index, arr) {
+//     arr[index] = x + 5;
+// })
+// console.log(number);
+
+//forEach:05
+// number.forEach(function(item, index) {
+//     console.log('a[' + index + '] = ' + item);
+// })
+
+//forEach:06
+// number.forEach(arr => {
+//     console.log(arr);
+// })
+
+//forEach:07
+// let sum = 0;
+// number.forEach(item => {
+//     sum += item;
+// })
+// console.log(sum);
+
+//forEach:08
+const letters = ['a', 'b', 'a', 'b', 'c', 'd', 'a', 'm', 'k', 'm'];
+let count = {};
+letters.forEach(item => {
+    if (count[item]) {
+        count[item]++;
+    } else {
+        count[item] = 1;
+    }
 })
-console.log(number);
+console.log(count);

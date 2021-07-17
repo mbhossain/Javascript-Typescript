@@ -1,0 +1,489 @@
+001. JS Course Introductions *
+
+002.  Who is This Course For? *
+ 
+003. How to Use This Course Contents *
+
+004. Setup Working Environment *
+ 
+005.  First Code of JS *
+
+006.  What is Variables *
+
+007.  JS Reserved Words *
+ 
+008. JS Data Types *
+
+009.  JS Basic Numbers *
+# Nubber object
+# Number method like parseInt()
+# Infinity
+# NaN
+
+010. JS Basic Strings *
+
+011. JS Basic Booleans *
+
+012.  JS Null & Undefined *
+ 
+013. JS Type Conversion *
+
+014. Octal and Hexadecimal Numbers *
+
+015. JS Operators *
+ 
+016.  JS Statements *
+
+017. JS Math Functions *
+
+018.  JS Data Functions *
+
+019.  JS Comments *
+
+020.   JS Logic & Conditions *
+
+021. JS If Condition *
+
+022. JS Else Condition *
+
+023.  JS Else If Condition *
+ 
+024. JS Switch Statement *
+ 
+025. JS Logical Operators *
+
+026. JS Ternary Operator *
+
+027.  And Or Shorthand *
+ 
+028.  Introduction to Loops *
+ 
+029. JS For Loop *
+
+030.  JS While Loop *
+
+031. JS Do While Loop *
+
+032. JS Nested Loops *
+
+033.  JS Break Statement *
+
+034.  JS Continue Statement *
+
+035. JS Infinity for Loop *
+
+036. JS String *
+
+037. String Literal vs Constructor *
+
+038.  JS Escape Notation *
+
+039. JS String Comparison *
+
+040. JS String Methods *
+
+041.  JS String Length *
+ 
+042. JS Array *
+
+043. JS Array Declaration *
+
+044. JS Array Traversing *
+
+045. Array Insert Remove and Replace *
+
+046. JS Search Value in Array *
+
+047. Multidimensional Array *
+
+048. JS Reverse An Array *
+
+049. JS Array Methods *
+
+050. JS Object *
+
+051. JS Object Literal vs Constructor *
+
+053. Accessing Object Properties in Javascript *
+
+054. Setting Object Properties in Javascript *
+
+055. Remove Object Properties in Javascript *
+
+056. comparing two objects in Javascript *
+
+057. Iterate Object Properties in Javascript *
+
+058. Object Methods in Javascript *
+
+059. What is Function in Javascript *
+
+060. Defining a Function in Javascript *
+
+061. Invoking a Function in Javascript *
+
+062. Function arguments and parameters in Javascript *
+
+063. Argument Object in Javascript *
+
+064. Return Something from a Function in Javascript *
+
+065. Function Expression in Javascript *
+
+066. Inner Function in Javascript *
+
+067. Function Scoping in Javascript *
+
+068. What is Functional Programming in Javascript *
+
+069. Pure Functions in Javascript *
+
+070. first class function in Javascript *
+
+071. Higher Order Function in Javascript *
+
+072. Closure First Look in Javascript *
+
+073. Callback Function in Javascript *
+
+074. Foreach Implementation in Javascript *
+
+075. Map Function in Javascript *
+
+076. Filter Function in Javascript *
+
+077. Reduce Function in Javascript *
+
+078. Find and FindIndex Function in Javascript *
+
+079. Sort, Some and Every Function in Javascript *
+
+080. Return a Function from Another Function in Javascript *
+
+081. Recursive Function in Javascript
+
+082. Currying in Javascript 
+
+083. Function Composition in Javascript
+
+084. Javascript Engine
+
+085. Compiled vs interpreted 
+
+086. Execution Context in Javascript
+
+087. Creation and Execution of Context in Javascript
+
+088. Variable Object Creation in Javascript
+
+089. Execution Context and Function in Javascript
+
+090. Hoisting in Javascript
+
+091. Function Declaration vs Expression in Javascript
+
+092. Scope in Javascript
+
+093. Nested Scope in Javascript
+
+094. Lexical Scope in Javascript
+
+095. Scope Chain in Javascript
+
+096. Closure in Javascript
+
+097. Closure and Loops in Javascript 
+
+098. Intro to OOP in Javascript
+
+099. Think Everything as an Object in Javascript
+
+100. Methods and Properties in Javascript
+
+101. Class in Javascript
+
+102. Four Pillars of OOP
+
+103. Abstraction
+
+104. Encapsulation
+
+105. Inheritance
+
+106. Polymorphism
+
+107. Intro to Object Oriented in Javascript
+
+108. Object Literal in Javascript
+
+109. "THIS" in Javascript 
+
+110. Factory pattern in Javascript
+
+111. Constructor Pattern in Javascript
+
+112. New Keyword in Javascript
+
+113. Factory vs Constructor in Javascript
+
+114. Constructor Property in Javascript
+
+115. Functions Are Object in Javascript
+
+116. Bind Call Apply in Javascript
+
+117. Pass By Value vs Pass by Reference in Javascript
+
+118. Abstraction in Javascript
+
+119. Private Properties in Javascript
+
+120. Getter Setter in Javascript
+
+121. Intro to Inheritance in Javascript 
+
+122. Prototype and Prototypical Inheritance in Javascript
+
+123. Multi Level Inheritance in Javascript
+
+124. Property Descriptor in Javascript
+
+125. Constructor Prototype in Javascript
+
+126. Instance vs Prototype Members in Javascript
+
+127. Using Instance and Prototype Members in Javascript
+
+128. Iterate Object and HasOwnProperty in Javascript
+
+129. Don't Overwrite Built in Prototypes in Javascript
+
+130. First Prototypical Inheritance in Javascript
+
+131. Reset Constructor After Inheritance in Javascript
+
+132. Calling super with Call method in Javascript
+
+133. Creating Extends Function in Javascript
+
+134. Method Overriding in Javascript
+
+135. Polymorphism in Javascript
+
+136. When to Use Inheritance in Javascript 
+
+137. Inheritance and Composition Mixing in Javascript
+
+138. What is ES6 in Javascript 
+
+139. Setup Your Environment
+
+140. Template String in Javascript
+
+141. Let vs Const vs Var in Javascript
+
+142. Arrow Function Syntax in Javascript
+
+143. Arrow Functions and This in Javascript
+
+144. Default Parameters in Javascript
+
+145. Custom Iteratable Object in Javascript
+
+146. Rest and Spread Operator in Javascript
+
+147. Enhance Object in Javascript
+
+148. Destructuring in Javascript
+
+149. Object From Entries in Javascript
+
+150. Symbols in Javascript
+
+151. Webpack 4 + babel 7
+
+152. Iterator Basics in Javascript
+
+153. Iterator with Symbol in Javascript
+
+154. For of Loop in Javascript
+
+155. Generators in Javascript
+
+156. Set in Javascript
+
+157. Map in Javascript
+
+158. Weak Set in Javascript
+
+159. Weak Map in Javascript
+
+160. Class in Javascript
+
+161. Class Properties in Javascript
+
+162. Static Method in Javascript
+
+163. "This" in Class in Javascript
+
+164. Private Data with Symbol in Javascript
+
+165. Private Properties with WeakMap in Javascript
+
+166. Getter Setter in Javascript
+
+167. Inheritance in ES6 in Javascript
+
+168. Method Overriding in ES6 in Javascript
+
+169. ES6 Modules System in Javascript
+
+170. Error in Javascript
+
+171. Error Handling with If Else in Javascript 
+
+172. Error Handling with Try Catch in Javascript
+
+173. Throwing an Error in Javascript
+
+174. Finally Block in Javascript
+
+175. Optional Catch Binding in Javascript 
+
+176. Custom Error in Javascript
+
+177. What is Asynchronous Programming in Javascript
+
+178. Asynchronous Programming is Action in Javascript
+
+179. How to Store result from Async Function in Javascript
+
+180. Why does Javascript Act Like Asynchronous
+
+181. How JS Handle Asynchronous
+
+182. v8 engine in Javascript
+
+183. How to Handle Asynchronous Tasks in Javascript
+
+184. What is Ajax
+
+185. Ajax with Callback in Javascript
+
+186. Callback Not Always Asynchronous in Javascript
+
+187. Why Not Callback in Javascript
+
+188. Introduction to Promise in Javascript
+
+189. Implement Fetch API in Javascript
+
+190. Promise API in Javascript
+
+191. Async Await in Javascript
+
+192. Async Iterator in Javascript
+
+193. For Await of Loop in Javascript
+
+194. Async Generators in Javascript
+
+195. Introduction to DOM
+
+196. Window Object in Javascript
+
+197. Document Object in Javascript
+
+198. Selectors Part One in Javascript 
+
+199. Selectors Part Two in Javascript
+
+200. GetElemetns Method vs Query Selector in Javascript
+
+201. How to Traverse DOM Elements in Javascript
+
+202. How to Loop Throw HTML Collections in Javascript
+
+203. Create DOM Elements in Javascript
+
+204. Insert Adjacent Element in Javascript 
+
+205. Update and Remove any DOM Elements in Javascript
+
+206. How to Clone Node Include It's Child Elements in Javascript
+
+207. How to Deal with Attributes in DOM Manipulation in Javascript 
+
+208. Style in DOM in Javascript
+
+209. Introduction to Event in DOM Manupulation in Javascript
+
+210. Event Delegation in DOM Manipulation
+
+211. Input Box Event Handling in Javascript
+
+212. Check Box Event Handling in Javascript
+
+213. List and Input Event Handler in Javascript
+
+214. Form Handling in DOM in Javascript
+
+215. Form Validation in DOM in Javascript
+
+216. AJAX GET Request in Javascript
+
+217. Ajax Post Request in Javascript
+
+218. Conclusion of DOM Manipulation in Javascript
+
+219. What is Library
+
+220. JQuery
+
+221. Lodash
+
+222. Underscore
+
+223. Math JS
+
+224. Moment JS
+
+225. Collect JS
+
+226. Axios
+
+227. Conclusion of this course
+
+228. Frontend in Javascript
+
+229. Backend in Javascript
+
+230. Fullstack Development in Javascript
+
+231. Mobile Frameworks in Javascript
+
+232. Desktop Frameworks in Javascript 
+
+233. Introduction to our Project in Javascript
+
+234. Setup and Resources for Our Project
+
+235. User Permission for Location
+
+236. Set Weather Information to DOM
+
+237. Handle User Input in Javascript
+
+238. Setup Backend Server in Javascript
+
+239. MongoDB Database and Mongoose Setup
+
+240. Create History Model in Javascript
+
+241. Create History Router in Javascript
+
+242. History Request and Update DOM in Javascript
+
+243. Using Callback to Post New History in Javascript 
+
+244. Deploying Apps to Heroku

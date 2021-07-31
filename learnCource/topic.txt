@@ -1,3 +1,6 @@
+                                                                     chapter_one 
+[basic programming in javascript chapter one to eight]
+
 001. JS Course Introductions *
 
 002.  Who is This Course For? *
@@ -5,14 +8,29 @@
 003. How to Use This Course Contents *
 
 004. Setup Working Environment *
+                                                                     chapter_two
+                                                               javasript introduction
  
-005.  First Code of JS *
+005.  First Code of JS **
+
+ what is programming?
+ programming is a set of instruction which our computer can read, 
+ understand and produce output.
 
 006.  What is Variables *
 
 007.  JS Reserved Words *
  
 008. JS Data Types *
+
+           1.primitive type
+               number
+               string
+               boolean
+               undefind
+               null
+           2.object type
+ অনেকগুলো প্রিমিটিভ ডাটা টাইপের কম্বিনেশনে ইউজার ডিফাইন্ড একটি নতুন ডাটা টাইপ তৈরি করতে পারি।
 
 009.  JS Basic Numbers *
 # Nubber object
@@ -39,8 +57,17 @@
 018.  JS Data Functions *
 
 019.  JS Comments *
+                                                                     chapter_three
+                                                                  logic and condition
 
-020.   JS Logic & Conditions *
+
+020.   JS Logic & Conditions **
+
+ logic and condition
+         1.if condition
+         2.else condition
+         3.else if condition
+         4.switch statement
 
 021. JS If Condition *
 
@@ -55,8 +82,19 @@
 026. JS Ternary Operator *
 
 027.  And Or Shorthand *
+                                                                     chapter_four
+                                                                 loops and iterations
  
-028.  Introduction to Loops *
+028.  Introduction to Loops **
+
+ loops are statement which execute some block of code 
+ repeatedly until the condition becomes false
+
+         1.for loop 
+             [for in loop
+              for off loop]
+         2.while loop
+         3.do while loop
  
 029. JS For Loop *
 
@@ -71,8 +109,10 @@
 034.  JS Continue Statement *
 
 035. JS Infinity for Loop *
+                                                                     chapter_five
+                                                                 string in javascript
 
-036. JS String *
+036. JS String **
 
 037. String Literal vs Constructor *
 
@@ -83,8 +123,14 @@
 040. JS String Methods *
 
 041.  JS String Length *
+                                                                     chapter_six
+                                                                 array in javascript
  
-042. JS Array *
+042. JS Array **
+
+ what is array?
+ array is a data structure whwre we can organize 
+ multiple data under a single variable.
 
 043. JS Array Declaration *
 
@@ -99,8 +145,12 @@
 048. JS Reverse An Array *
 
 049. JS Array Methods *
+                                                                     chapter_seven
+                                                                 object in javascript
 
-050. JS Object *
+050. JS Object **
+
+ অনেকগুলো প্রিমিটিভ ডাটা টাইপের কম্বিনেশনে ইউজার ডিফাইন্ড একটি নতুন ডাটা টাইপ তৈরি করতে পারি।
 
 051. JS Object Literal vs Constructor *
 
@@ -115,8 +165,22 @@
 057. Iterate Object Properties in Javascript *
 
 058. Object Methods in Javascript *
+                                                                     chapter_eight
+                                                                 function in javascript
 
-059. What is Function in Javascript *
+059. What is Function in Javascript **
+
+ what is function?
+ function is a block of code designed to perform a particular task.
+
+ there are three part of a function-
+         1.input
+         2.processing
+         3.output
+ যখন আমরা থার্ডপার্টি কোন লাইব্রেরী থেকে ফাংশন ব্যবহার করি, 
+ সেখানে প্রসেসিং অংশটি আমাদের থেকে পুরোপুরি হিডেন রাখা হয়। 
+ কোন ইনপুট দিলে সরাসরি আউটপুট পেয়ে থাকি যাকে অ্যাবস্ট্রাকশন বলে।
+ ফাংশন হচ্ছে খুবই বেসিক টাইপের একটি অ্যাবস্ট্রাকশন।
 
 060. Defining a Function in Javascript *
 
@@ -134,7 +198,28 @@
 
 067. Function Scoping in Javascript *
 
-068. What is Functional Programming in Javascript *
+                                                                                chapter_nine
+                                                                     functional programming with javascript 
+           
+
+068. What is Functional Programming in Javascript **
+ what is functional programming?
+ একটি ফাংশন যখন একটি ভ্যালুর মত রিঅ্যাক্ট করবে তখন সেটাকে বলবো ফাংশনাল প্রগ্রমিং।
+
+ Functonal programming is a programming paradigm a style of building the 
+ structure and elements of computer programs that treats computation as 
+ the evaluation of mathematical and avoids changing state and mutable data. 
+
+three main terms
+  1. pure function
+ ইনপুট পরিবর্তন না করলে আউটপুট এর কোনো পরিবর্তন হবে না
+ 2. first class function
+ অনেক কারণেই একটি ফাংশন ফাস্ট ক্লাস ফাংশন হতে পারে। 
+ একটি ফাংশন যখন একটি ভ্যালুর মত রিঅ্যাক্ট করবে তখন সেটাকে আমরা ফার্স্ট ক্লাস ফাংশন বলতে পারি।
+
+ 3. higher order function 
+ একটা ফাংশানের আর্গুমেন্ট আকারে অন্য একটি ফাংশন পাস করতে পারি এবং সেই ফাংশন থেকে ইচ্ছা করলে আরেকটা নতুন ফাংশন তৈরি 
+ করে রিটার্ন করতে পারি। যেটাকে একটা ভেরিয়েবলের ভিতর স্টোর করে পরবর্তীতে কল করতে পারি। 
 
 069. Pure Functions in Javascript *
 
@@ -161,31 +246,65 @@
 080. Return a Function from Another Function in Javascript *
 
 081. Recursive Function in Javascript *
-যে ফাংশন নিজেই নিজেকে কল করতে পারে তাকে রিকার্সিভ ফাংশন বলে
-ফাংশন কল যেন ইনফিনিটি টাইম না হয়ে যায় সে জন্য একটি টার্মিনেটর সেট করে দিতে হয়
-রিকার্সিভ ফাংশন ব্যবহার করে লুপ এর কাজ সহজেই করা যায়
+ যে ফাংশন নিজেই নিজেকে কল করতে পারে তাকে রিকার্সিভ ফাংশন বলে
+ ফাংশন কল যেন ইনফিনিটি টাইম না হয়ে যায় সে জন্য একটি টার্মিনেটর সেট করে দিতে হয়
+ রিকার্সিভ ফাংশন ব্যবহার করে লুপ এর কাজ সহজেই করা যায়
 
 082. Currying in Javascript *
-একটি ফাংশনে যদি মাল্টিপল আর্গুমেন্ট থাকে
- আমরা সহজেই আর্গুমেন্ট গুলো ভেঙ্গে প্রথম ফাংশন একটি আর্গুমেন্ট বহন করবে
- এবং অন্য একটি ফাংশন রিটার্ন করবে যে ফাংশনটি অন্য একটি আর্গুমেন্ট বহন করবে
+ একটি ফাংশনে যদি মাল্টিপল আর্গুমেন্ট থাকে
+  আমরা সহজেই আর্গুমেন্ট গুলো ভেঙ্গে প্রথম ফাংশন একটি আর্গুমেন্ট বহন করবে
+  এবং অন্য একটি ফাংশন রিটার্ন করবে যে ফাংশনটি অন্য একটি আর্গুমেন্ট বহন করবে
  এভাবে লাস্টের ফাংশনটি ফাইনাল রেজাল্ট রিটার্ন করবে
-ফলে একটি ফাংশন এর মধ্যে মাল্টিপল আর্গুমেন্ট পাস করতে হচ্ছে না
-যা ফাংশন কম্পোজিশন, ইভেন্ট হ্যান্ডেলিং এর ক্ষেত্রে অত্যন্ত গুরুত্বপূর্ণ
-কারিং নিয়ে কাজ করার জন্য জাভাস্ক্রিপ্টে সরাসরি কোনো ইউটিলিটি টুল নেই 
-সেজন্য লোডাস নামক একটি থার্ডপার্টি লাইব্রেরী আছে যেখানে কারিং ইমপ্লিমেন্ট করা আছে
+ ফলে একটি ফাংশন এর মধ্যে মাল্টিপল আর্গুমেন্ট পাস করতে হচ্ছে না
+ যা ফাংশন কম্পোজিশন, ইভেন্ট হ্যান্ডেলিং এর ক্ষেত্রে অত্যন্ত গুরুত্বপূর্ণ
+ কারিং নিয়ে কাজ করার জন্য জাভাস্ক্রিপ্টে সরাসরি কোনো ইউটিলিটি টুল নেই 
+ সেজন্য লোডাস নামক একটি থার্ডপার্টি লাইব্রেরী আছে যেখানে কারিং ইমপ্লিমেন্ট করা আছে
 
-083. Function Composition in Javascript
-এটা ফাংশনাল প্রোগ্রামিং এর কম্পোজিশন
-যদি প্রথম ফাংশন এর ইনপুট আকারে দ্বিতীয় ফাংশন এর আউটপুট দেয়া যায় সে ক্ষেত্রে আমরা এটাকে কম্পোজিশন ফাংশন বলতে পারি
+083. Function Composition in Javascript *
+ এটা ফাংশনাল প্রোগ্রামিং এর কম্পোজিশন।
+ যদি প্রথম ফাংশন এর ইনপুট আকারে দ্বিতীয় ফাংশন এর আউটপুট দেয়া যায় 
+ সে ক্ষেত্রে আমরা এটাকে কম্পোজিশন ফাংশন বলতে পারি।
 
-084. Javascript Engine
+                                                                     chapter_ten
+                                                           scope and closure in javascript
 
-085. Compiled vs interpreted 
+084. Javascript Engine *
+
+ executional context, variable object creation, 
+ hoesting will be discussing in this chapter.
+
+ hat is javascript engine?
+ is an another program which can read, 
+ understand and translate javascript code.
+
+ javascript engines:
+         v8 > google chrome > google
+         spider monkey > mozilla firefox mozilla company
+         chakra > internet explorer > microsoft
+         javascript core > safari > apple
+
+ google chrome javascript engine name is v8.
+ v8 engine also used nodeJs
+
+ source code > parser > abstract window tree > machine code > execution
+
+085. Compiled vs interpreted *
+
+  কম্পাইলেশন এর ক্ষেত্রে build এবং execution এই দুইটি স্টেপে কাজ সম্পন্ন হয়। 
+  অর্থাৎ প্রথমে সোর্স কোড তৈরি হয় যা মূলত মেশিন কোড এবং পরবর্তীতে এক্সিকিউশন হয়।
+ interpreted এর ক্ষেত্রে যখন যে কোড কল করা হয় সে কোডএক্সিকিউট হয়। 
+ 
+ JIT > just in time [compiler]
 
 086. Execution Context in Javascript
 
 087. Creation and Execution of Context in Javascript
+
+ creational phase: variable declaration, 
+                   scope chin maintain[কোন একটি ভেরিয়েবল বা ফাংশন রেফারেন্স এর সাথে অন্য কারো সম্পর্ক আছে কি নেই। ], 
+                   function declaration সবকিছু কালেক্ট করবে creational phase এ। 
+ executional phase: যেকোনো এক্সিকিউটেবল কোড লজিক্যাল কোড সবকিছু এক্সিকিউট হবে executional phase এ। 
+                    executional phase এ this নামক যে ভেরিয়েবল টি আছে তার value asign করা হবে। 
 
 088. Variable Object Creation in Javascript
 

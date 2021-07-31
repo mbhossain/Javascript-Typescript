@@ -310,7 +310,7 @@ three main terms
 
 089. Execution Context and Function in Javascript *
 
-090. Hoisting in Javascript
+090. Hoisting in Javascript *
 
 091. Function Declaration vs Expression in Javascript
 

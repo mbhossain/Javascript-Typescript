@@ -273,7 +273,7 @@ three main terms
  executional context, variable object creation, 
  hoesting will be discussing in this chapter.
 
- hat is javascript engine?
+ what is javascript engine?
  is an another program which can read, 
  understand and translate javascript code.
 
@@ -296,9 +296,9 @@ three main terms
  
  JIT > just in time [compiler]
 
-086. Execution Context in Javascript
+086. Execution Context in Javascript *
 
-087. Creation and Execution of Context in Javascript
+087. Creation and Execution of Context in Javascript *
 
  creational phase: variable declaration, 
                    scope chin maintain[কোন একটি ভেরিয়েবল বা ফাংশন রেফারেন্স এর সাথে অন্য কারো সম্পর্ক আছে কি নেই। ], 
@@ -306,9 +306,9 @@ three main terms
  executional phase: যেকোনো এক্সিকিউটেবল কোড লজিক্যাল কোড সবকিছু এক্সিকিউট হবে executional phase এ। 
                     executional phase এ this নামক যে ভেরিয়েবল টি আছে তার value asign করা হবে। 
 
-088. Variable Object Creation in Javascript
+088. Variable Object Creation in Javascript *
 
-089. Execution Context and Function in Javascript
+089. Execution Context and Function in Javascript *
 
 090. Hoisting in Javascript
 

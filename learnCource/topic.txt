@@ -320,25 +320,34 @@ three main terms
 
 093. Nested Scope in Javascript *
 
- একটি ফাংশন এর মধ্যে আরেকটি ফাংশন ডিক্লেয়ার করলে সেটাকে বলে nested ফাংশন। একটি loop এর মধ্যে আরেকটি loop ডিক্লেয়ার করলে সেটাকে বলে nested loop.
-একটি if condition এর  ভেতর আরেকটি  if condition লেখা হলে সেটাকে বলে nested if বা nested condition. 
+ একটি ফাংশন এর মধ্যে আরেকটি ফাংশন ডিক্লেয়ার করলে সেটাকে বলে nested ফাংশন। 
+ একটি loop এর মধ্যে আরেকটি loop ডিক্লেয়ার করলে সেটাকে বলে nested loop.
+ একটি if condition এর  ভেতর আরেকটি  if condition লেখা হলে 
+ সেটাকে বলে nested if বা nested condition. 
 
 094. Lexical Scope in Javascript *
 
- Javascript engine যখন কোন একটি কোড tokenize করে  সেই সময় সে define করে দেয় যে কার স্কোপ কি হবে এটাকে আমরা বলবো Lexical scope.
+ Javascript engine যখন কোন একটি কোড tokenize করে  সেই সময় সে define করে দেয় 
+  যে কার স্কোপ কি হবে এটাকে আমরা বলবো Lexical scope.
  Code ছোট ছোট অংশে ভাগ হাওয়াকে tokenize বা lexing বলে ।
 
 095. Scope Chain in Javascript *
 
 096. Closure in Javascript *
 
-  যদি কোন স্কোপ এর ভেতরে বাইরের কোনো স্কোপ থেকে Deta আসে তাহলে তাকে Closure বলবো।
- Closure is when a function is able to remember and access it's lexical scope
- even when that function executing outside it's lexical scope.
+  যদি কোন স্কোপ এর ভেতরে বাইরের কোনো স্কোপ থেকে Deta আসে 
+  তাহলে তাকে Closure বলবো।
+ Closure is when a function is able to 
+ remember and access it's lexical scope even when that 
+ function executing outside it's lexical scope.
 
 097. Closure and Loops in Javascript *
+                                                                     chapter_eleven
+                                                               object oriented programming
 
-098. Intro to OOP in Javascript
+098. Intro to OOP in Javascript *
+
+  যখন কোন ফাংশন একটি অবজেক্ট এর মধ্যে থাকে তখন তাকে মেথড বলে। 
 
 099. Think Everything as an Object in Javascript
 

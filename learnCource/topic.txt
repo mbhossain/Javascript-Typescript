@@ -332,6 +332,8 @@ three main terms
 
 096. Closure in Javascript
 
+  যদি কোন স্কোপ এর ভেতরে বাইরের কোনো স্কোপ থেকে Deta আসে তাহলে তাকে Closure বলবো।
+
 097. Closure and Loops in Javascript 
 
 098. Intro to OOP in Javascript

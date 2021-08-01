@@ -349,11 +349,22 @@ three main terms
 
   যখন কোন ফাংশন একটি অবজেক্ট এর মধ্যে থাকে তখন তাকে মেথড বলে। 
 
-099. Think Everything as an Object in Javascript
+099. Think Everything as an Object in Javascript *
 
-100. Methods and Properties in Javascript
+ যাকে বর্ণনা করার জন্য  multiple properties প্রয়োজন হবে তাকে অবজেক্ট বলে। 
+ Everything which takes multiple properties to describe is an object.
 
-101. Class in Javascript
+100. Methods and Properties in Javascript *
+
+ যা একটি অবজেক্ট এর বৈশিষ্ট্যগুলো বর্ণনা করে থাকে প্রপার্টিস বলে। noun/adjective > properties
+ যে কাজগুলো একটি অবজেক্ট করতে পারে সেগুলো মেথড। verb > methods 
+ ফাংশন সরাসরি কল করা যায় কিন্তু মেথড কোন object এর সাথে associated অবস্থায় আছে তার নাম ধরে কল করতে হবে। 
+ example: person.eat | person = object, eat = method
+
+101. Class in Javascript *
+
+ Class is just a factory to create multiple object without code duplication.
+ Class is just a templete of an Object.
 
 102. Four Pillars of OOP
 

@@ -330,11 +330,13 @@ three main terms
 
 095. Scope Chain in Javascript *
 
-096. Closure in Javascript
+096. Closure in Javascript *
 
   যদি কোন স্কোপ এর ভেতরে বাইরের কোনো স্কোপ থেকে Deta আসে তাহলে তাকে Closure বলবো।
+ Closure is when a function is able to remember and access it's lexical scope
+ even when that function executing outside it's lexical scope.
 
-097. Closure and Loops in Javascript 
+097. Closure and Loops in Javascript *
 
 098. Intro to OOP in Javascript
 

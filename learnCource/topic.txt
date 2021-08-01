@@ -312,7 +312,7 @@ three main terms
 
 090. Hoisting in Javascript *
 
-091. Function Declaration vs Expression in Javascript
+091. Function Declaration vs Expression in Javascript *
 
 092. Scope in Javascript
 

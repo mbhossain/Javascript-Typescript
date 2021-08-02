@@ -400,9 +400,15 @@ three main terms
 
 111. Constructor Pattern in Javascript *
 
-112. New Keyword in Javascript
+112. New Keyword in Javascript *
 
-113. Factory vs Constructor in Javascript
+  new keyword একটি empty object create করে।
+  empty object/Constructor এর সাথে htis কে bind করে।  
+  Constructor function এর যে প্রোটোটাইপ গুলো আছে সেগুলো copy করে empty object এর মধ্যে inherite করে।  
+  object টাকে return করে।   
+113. Factory vs Constructor in Javascript *
+ 
+ Do not Repeat Your Self > DRYS
 
 114. Constructor Property in Javascript
 

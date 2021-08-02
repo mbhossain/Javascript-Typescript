@@ -398,7 +398,7 @@ three main terms
 
 110. Factory pattern in Javascript *
 
-111. Constructor Pattern in Javascript
+111. Constructor Pattern in Javascript *
 
 112. New Keyword in Javascript
 

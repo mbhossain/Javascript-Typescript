@@ -396,7 +396,7 @@ three main terms
  কোন object ব্যতীত দিস যে কোন জায়গায় ব্যবহার করলে সে window object কে রেফার করবে। 
  যে execution context এ this ব্যবহার করা হবে execution এর ঠিক আগ মুহূর্তে value টি পাবে।
 
-110. Factory pattern in Javascript
+110. Factory pattern in Javascript *
 
 111. Constructor Pattern in Javascript
 

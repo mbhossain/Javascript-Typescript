@@ -390,7 +390,11 @@ three main terms
 
 108. Object Literal in Javascript *
 
-109. "THIS" in Javascript 
+109. "THIS" in Javascript * 
+
+ this যে অবজেক্ট এর মধ্যে ব্যবহার করা হবে সেই  object কে সবসময়  রেফার করবে।
+ কোন object ব্যতীত দিস যে কোন জায়গায় ব্যবহার করলে সে window object কে রেফার করবে। 
+ যে execution context এ this ব্যবহার করা হবে execution এর ঠিক আগ মুহূর্তে value টি পাবে।
 
 110. Factory pattern in Javascript
 

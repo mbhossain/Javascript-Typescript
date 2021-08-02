@@ -410,7 +410,9 @@ three main terms
  
  Do not Repeat Your Self > DRYS
 
-114. Constructor Property in Javascript
+114. Constructor Property in Javascript *
+
+ Constructor property হচ্ছে কোন object তৈরি করার জন্য যে ফাংশন ব্যবহার করা হয়েছে তার রেফারেন্স। 
 
 115. Functions Are Object in Javascript
 

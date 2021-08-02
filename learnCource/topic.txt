@@ -414,7 +414,10 @@ three main terms
 
  Constructor property হচ্ছে কোন object তৈরি করার জন্য যে ফাংশন ব্যবহার করা হয়েছে তার রেফারেন্স। 
 
-115. Functions Are Object in Javascript
+115. Functions Are Object in Javascript *
+
+ javascript এ function একটি spceial type of object যে object টা executable.
+ অর্থাৎ এর ভেতর কিছু কোড থাকলে সেই কোডগুলো পুনরায় এক্সিকিউট করা যায়। 
 
 116. Bind Call Apply in Javascript
 

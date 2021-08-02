@@ -366,19 +366,29 @@ three main terms
  Class is just a factory to create multiple object without code duplication.
  Class is just a templete of an Object.
 
-102. Four Pillars of OOP
+102. Four Pillars of OOP *
 
-103. Abstraction
+ oop stands on four pillar
+    abstraction: implementation hide করা। 
+  অর্থাৎ একটা object এর ভেতরে কোন একটি functionalities কিভাবে কাজ করছে তা আমরা hide করবো abstraction এর  মাধ্যমে। 
+    encapsulation: properties এবং method কে  bind বা encapsulate করার প্রক্রিয়া। 
+    inheritance: অন্যের বৈশিষ্ট্য নিজের মধ্যে ধারণ করা। 
+ বহু অবজেক্ট এর মধ্য থেকে যার যে বৈশিষ্ট্য প্রয়োজন তা নিজের মধ্যে ধারণ করা। code dublication কমে যায়। 
+    polymorphism: একই অবজেক্ট এর বহু চেহারা। [method overwrite, method overload]
 
-104. Encapsulation
+103. Abstraction *
 
-105. Inheritance
+104. Encapsulation *
 
-106. Polymorphism
+105. Inheritance *
 
-107. Intro to Object Oriented in Javascript
+106. Polymorphism *
+                                                                     chapter_twelve
+                                                         object oriented programming more detail
 
-108. Object Literal in Javascript
+107. Intro to Object Oriented in Javascript *
+
+108. Object Literal in Javascript *
 
 109. "THIS" in Javascript 
 

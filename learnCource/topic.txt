@@ -419,7 +419,9 @@ three main terms
  javascript এ function একটি spceial type of object যে object টা executable.
  অর্থাৎ এর ভেতর কিছু কোড থাকলে সেই কোডগুলো পুনরায় এক্সিকিউট করা যায়। 
 
-116. Bind Call Apply in Javascript
+116. Bind Call Apply in Javascript *
+ 
+ একটা function যখন ডিফারেন্ট অবজেক্ট শেয়ার করে তখন call, apply, bind মেথড নিয়ে কাজ করতে হয়। 
 
 117. Pass By Value vs Pass by Reference in Javascript
 

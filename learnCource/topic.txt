@@ -433,11 +433,18 @@ three main terms
  primitive deta pass করাকে pass by value এবং object deta pass করাকে pass by reference বলে। 
 কোন object এর value পরিবর্তন করা গেলে তাকে imutable object বলে। কোন object এর value পরিবর্তন করা  না গেলে তাকে mutable object বলে।
 
-118. Abstraction in Javascript
+118. Abstraction in Javascript *
+method বা code পাবলিকের কাছ থেকে hide রাখার প্রক্রিয়াকে abstruction বলে
 
-119. Private Properties in Javascript
+119. Private Properties in Javascript *
+ফাংশানের মধ্যে কোন property hide করতে চাইলে  property কে একটি ভেরিয়েবল দ্বারা ডিক্লেয়ার করতে হবে
 
 120. Getter Setter in Javascript
+যদি object এর মধ্যে যদি কোন private property থাকে 
+সেই private property তে বাইরে থেকে access নিতে পারবেন getter ব্যবহার করে 
+এবং বাইরে থেকে deta set করতে পারবেন setter ব্যবহার করে 
+                                                                     chapter_thirteen
+                                                            prototype and prototypical inheritance
 
 121. Intro to Inheritance in Javascript 
 

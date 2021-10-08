@@ -439,22 +439,27 @@ method বা code পাবলিকের কাছ থেকে hide রা�
 119. Private Properties in Javascript *
 ফাংশানের মধ্যে কোন property hide করতে চাইলে  property কে একটি ভেরিয়েবল দ্বারা ডিক্লেয়ার করতে হবে
 
-120. Getter Setter in Javascript
+120. Getter Setter in Javascript *
 যদি object এর মধ্যে যদি কোন private property থাকে 
 সেই private property তে বাইরে থেকে access নিতে পারবেন getter ব্যবহার করে 
 এবং বাইরে থেকে deta set করতে পারবেন setter ব্যবহার করে 
                                                                      chapter_thirteen
                                                             prototype and prototypical inheritance
 
-121. Intro to Inheritance in Javascript 
+121. Intro to Inheritance in Javascript *
+দুই ধরনের inheritance আমরা দেখতে পাই
+a. classical inheritance: class base object oriented program গুলো inheritance করে থাকে
+b. prototypical inheritance: যেখানে কোন ক্লাস নেই যেমন javascript এমন ধরনের program এ inheritance করে থাকি
 
-122. Prototype and Prototypical Inheritance in Javascript
+122. Prototype and Prototypical Inheritance in Javascript *
+prototype হচ্ছে parent class
+javascript এ প্রত্যেকটা object এর একটি object base থাকবে শুধুমাত্র {} & Object এর কোন object base থাকেনা 
 
-123. Multi Level Inheritance in Javascript
+123. Multi Level Inheritance in Javascript *
 
-124. Property Descriptor in Javascript
+124. Property Descriptor in Javascript *
 
-125. Constructor Prototype in Javascript
+125. Constructor Prototype in Javascript *
 
 126. Instance vs Prototype Members in Javascript
 

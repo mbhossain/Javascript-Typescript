@@ -1,3 +1,8 @@
+let value = [];
+for (let i = 1; i <= 100000000; i++) { value.push(i) }
+
+const bstStart = performance.now();
+
 let recursiveFunction = function (arr, x, start, end) {
 
     // Base Condition
@@ -20,10 +25,43 @@ let recursiveFunction = function (arr, x, start, end) {
         return recursiveFunction(arr, x, mid + 1, end);
 }
 
-// Driver code
-let arr = [1, 3, 5, 7, 8, 9];
-let x = 10;
 
-if (recursiveFunction(arr, x, 0, arr.length - 1))
+// Array sort
+let arr = [4, 32, 2, 5, 8, 10];
+
+for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+        if (arr[i] > arr[j]) {
+            temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+    }
+} 
+
+// Driver code
+let x = 23456;
+if (recursiveFunction(value, x, 0, value.length - 1))
     document.write("Element found!<br>");
 else document.write("Element not found!<br>");
+
+const bstEnd = performance.now();
+console.log(`Execution Time: ${bstEnd - bstStart} ms`);
+
+// General Search
+const start = performance.now();
+let y = 23456;
+function findElement() {
+    for (let i = 0; i < value.length; i++) {
+
+        if (value[i] === y) {
+            document.write("Element found!<br>");
+        }
+    }
+}
+
+findElement();
+const end = performance.now();
+
+console.log(`Execution Time direct: ${end - start} ms`);
+

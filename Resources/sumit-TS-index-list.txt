@@ -1,0 +1,29 @@
+Lesson 1 - Introduction & Installation
+
+Lesson 2 - Editor Setup & Compilation
+
+Lesson 3 - Type Basics
+
+Lesson 4 - Explicit & Union Types
+
+Lesson 5 - Dynamic Type
+
+Lesson 6 - How to use Functions
+
+Lesson 7 - Type Aliases
+
+Lesson 8 - Function Signatures
+
+Lesson 9 - Classes
+
+Lesson 10 - Access Modifiers
+
+Lesson 11 - Module System
+
+Lesson 12 - Interfaces
+
+Lesson 13 - Generics
+
+Lesson 14 - Enum Types
+
+Lesson 15 - Tuples

@@ -1,2 +1,12 @@
-1. bangla tutorial -> https://www.youtube.com/watch?v=BRzJ-2mid78&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=4
+-> Javascript
+
+1. bangla tutorial: H M Nayem
+https://www.youtube.com/watch?v=BRzJ-2mid78&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=4
+
+-> Typescript
+
+1. What is a tsconfig.json
+https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+
+-> Data Structure
 

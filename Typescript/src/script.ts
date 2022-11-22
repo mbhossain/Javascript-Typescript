@@ -1,8 +1,10 @@
 import { Player } from './classes/player.js';
+import { IsPlayer } from './interfaces/isPlayer.js';
 import { RectangleOption } from './interfaces/rectangle-option.js';
 
 const mashrafi = new Player('Mashrafi', 40, 'Bangladesh');
-const shakib = new Player('Shakib', 37, 'Bangladesh');
+let shakib: IsPlayer;
+shakib = new Player('Shakib', 37, 'Bangladesh');
 
 console.log(shakib.age);
 console.log(shakib.country);

@@ -24,3 +24,39 @@ const result = drawRectangle({
 });
 
 console.log(result);
+
+//Generics for Class
+
+// const addId = (obj: object) => { // Without Generics
+//     let id = Math.floor(Math.random() * 100);
+//     return { ...obj, id };
+// }
+
+const addId = <T extends object>(obj: T) => {
+    let id = Math.floor(Math.random() * 100);
+    return { ...obj, id };
+}
+
+let user = addId({
+    name: 'Mashrafi',
+    age: 40
+});
+
+console.log(user.age); // Without Generics user didn't suggest name & age
+
+//Generics for interface
+
+interface ApiResponse<T> {
+    status: number;
+    type: string;
+    data: T
+}
+
+const response1: ApiResponse<object> = {
+    status: 200,
+    type: 'Message',
+    data: {
+        name: 'Mohammad',
+        age: 34
+    }
+}

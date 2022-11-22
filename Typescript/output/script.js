@@ -15,3 +15,25 @@ const result = drawRectangle({
     height: 20
 });
 console.log(result);
+//Generics for Class
+// const addId = (obj: object) => { // Without Generics
+//     let id = Math.floor(Math.random() * 100);
+//     return { ...obj, id };
+// }
+const addId = (obj) => {
+    let id = Math.floor(Math.random() * 100);
+    return Object.assign(Object.assign({}, obj), { id });
+};
+let user = addId({
+    name: 'Mashrafi',
+    age: 40
+});
+console.log(user.age); // Without Generics user didn't suggest name & age
+const response1 = {
+    status: 200,
+    type: 'Message',
+    data: {
+        name: 'Mohammad',
+        age: 34
+    }
+};

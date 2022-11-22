@@ -46,17 +46,46 @@ console.log(user.age); // Without Generics user didn't suggest name & age
 
 //Generics for interface
 
+// interface ApiResponse<T> {
+//     status: number;
+//     type: string;
+//     data: T
+// }
+
+// const response1: ApiResponse<object> = {
+//     status: 200,
+//     type: 'Message',
+//     data: {
+//         name: 'Mohammad',
+//         age: 34
+//     }
+// }
+
+// Enums
+
+enum RType { Success, Failure, Unauthenticated, Forbidden };
+
 interface ApiResponse<T> {
     status: number;
-    type: string;
+    type: RType;
     data: T
 }
 
 const response1: ApiResponse<object> = {
     status: 200,
-    type: 'Message',
+    type: RType.Unauthenticated,
     data: {
         name: 'Mohammad',
         age: 34
     }
 }
+
+console.log(response1);
+
+//Tuples
+
+let a = [3, 'Belal', { p: 3 }];
+a[1] = 5; //Without Tuples no problem
+
+let b: [number, string, object] = [2, 'Mohammad', { t: 1 }];
+// b[1]=7 // With Tuples make compile time error

@@ -1,4 +1,4 @@
-let arr = [3, 5, 78, 23, 2, 9];
+// let arr = [3, 5, 78, 23, 2, 9];
 
 // max() implementation
 
@@ -49,22 +49,45 @@ let arr = [3, 5, 78, 23, 2, 9];
 
 let number = [2, 45, 67, 12, 100, 6, 4];
 
-function secondMaxCase02(arr) {
-  let maxNumner = 0;
-  let secondMaxNumber = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > maxNumner) {
-      maxNumner = arr[i];
-    }
-  }
+// function secondMaxCase02(arr) {
+//   let maxNumner = 0;
+//   let secondMaxNumber = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > maxNumner) {
+//       maxNumner = arr[i];
+//     }
+//   }
 
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > secondMaxNumber && arr[i] < maxNumner) {
-      secondMaxNumber = arr[i];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > secondMaxNumber && arr[i] < maxNumner) {
+//       secondMaxNumber = arr[i];
+//     }
+//   }
+//   console.log('maxNumner:', maxNumner);
+//   console.log('secondMaxNumber:', secondMaxNumber);
+// }
+
+// secondMaxCase02(number);
+
+function arrayDestucturing(arr) {
+  let newArr = [];
+  const length = arr.length;
+  const traversNo = Math.ceil(length / 3);
+ 
+  // for (let j = 1; j = traversNo; j++) {
+    let sum = 0;
+    for (let i = 0; i < length; i++) {
+      if (i == 3) {
+        break
+      } else {
+        sum += arr[i];
+      }
     }
-  }
-  console.log('maxNumner:', maxNumner);
-  console.log('secondMaxNumber:', secondMaxNumber);
+    debugger
+    let value= newArr.push(sum);
+    return value;
+  // }
 }
 
-secondMaxCase02(number);
+let newArr = arrayDestucturing(number);
+console.log('newArr:', newArr);

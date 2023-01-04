@@ -90,9 +90,10 @@ function arrayDestucturing(arr, noOfEl) {
     newArr[j] = sum;
     loopBreakNo += elementNo;
     loopStartFrom += elementNo;
-    console.log('newArr:', newArr);
+
   }
+  console.log('newArr:', newArr);
 }
 
-arrayDestucturing(number, 4);
+arrayDestucturing(number, 2);
 

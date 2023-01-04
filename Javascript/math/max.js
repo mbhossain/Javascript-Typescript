@@ -69,25 +69,30 @@ let number = [2, 45, 67, 12, 100, 6, 4];
 
 // secondMaxCase02(number);
 
-function arrayDestucturing(arr) {
+function arrayDestucturing(arr, noOfEl) {
   let newArr = [];
   const length = arr.length;
-  const traversNo = Math.ceil(length / 3);
- 
-  // for (let j = 1; j = traversNo; j++) {
+  const elementNo = noOfEl;
+  const traversNo = length / elementNo;
+  let loopBreakNo = elementNo - 1;
+  let loopStartFrom = 0;
+
+  for (let j = 0; j < traversNo; j++) {
     let sum = 0;
-    for (let i = 0; i < length; i++) {
-      if (i == 3) {
+    for (i = loopStartFrom; i < length; i++) {
+      if (i > loopBreakNo) {
         break
       } else {
         sum += arr[i];
       }
     }
-    debugger
-    let value= newArr.push(sum);
-    return value;
-  // }
+
+    newArr[j] = sum;
+    loopBreakNo += elementNo;
+    loopStartFrom += elementNo;
+    console.log('newArr:', newArr);
+  }
 }
 
-let newArr = arrayDestucturing(number);
-console.log('newArr:', newArr);
+arrayDestucturing(number, 4);
+

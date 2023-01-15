@@ -1,4 +1,4 @@
-const number = 704;
+const number = 7000045869;
 
 function findExcelIndex(n) {
   const arr = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
@@ -16,24 +16,22 @@ function findExcelIndex(n) {
         nextN = 26
       }
 
-      // debugger
+      newArr.unshift(nextN);
+    
       if (childN < 27) {
-        newArr.push(childN);
+        newArr.unshift(childN);
       }
 
-      newArr.push(nextN);
-      // newArr.reverse();
       n = childN;
-
     }
 
     const length = newArr.length;
+
     for (let i = 0; i < length; i++) {
       index += arr[newArr[i] - 1];
     }
 
     return index;
-
   } else {
     return arr[n - 1];
   }

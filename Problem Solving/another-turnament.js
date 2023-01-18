@@ -1,14 +1,13 @@
 // https://codeforces.com/problemset/problem/1783/C
 
-const oponent = 6;
-const time = 2;
+const oponent = 3;
+const time = 1;
 const timeArr = [1, 3, 2];
 
 function findPosition(o, t, arr) {
   let totalwin = 0;
-  let winPossible = 0;
-  let index = 0; 
-  
+  let timeCompare = 0;
+
   for (let i = 1; i < o; i++) {
     totalwin += i;
   }
@@ -18,21 +17,29 @@ function findPosition(o, t, arr) {
   });
 
   let length = sortArr.length;
-  
-  for (let j = index; j < length; j++) {
-    index = j;
-    winPossible += sortArr[j];
-    debugger
-    if (winPossible >= t)
+  let index = 0;
+
+  for (let j = 0; j < length; j++) {
+    timeCompare += sortArr[j];
+    index = j
+    if (timeCompare >= t) {
       break
-
+    }
 
   }
 
-  if (!(index = (length - 1))) {
-    winPossible = winPossible - sortArr[index];
+  const otherWin = totalwin - index;
+  
+  if (index == 0) {
+    return `Position: ${o}`;
+  } else if (index > otherWin) {
+    return `Position: 1`;
+  } else if (index < otherWin) {
+    return `Position: 2`;
+  } else if (index = otherWin) {
+    return `Position: 1`;
   }
-  return winPossible;
+
 }
 
 let result = findPosition(oponent, time, timeArr);

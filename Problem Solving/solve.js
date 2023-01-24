@@ -1,21 +1,23 @@
 // JavaScript program to generate binary numbers from 1 to n
+// This function uses queue data structure to print binary numbers
 
-// This function uses queue data structure to print binary
-// numbers
 function generatePrintBinary(n) {
+
   // Create an empty queue of strings
   let smallestNumber;
   var q = [];
-  // let num = 10000;
+  
   // Enqueue the first binary number
   q.push("9");
 
   // This loops is like BFS of a tree with 1 as root
   // 0 as left child and 1 as right child and so on
   while (true) {
+
     // print the front of queue
     var s1 = q[0];
     q.shift();
+
     console.log(s1);
 
     if (s1 % n == 0) {
@@ -31,17 +33,19 @@ function generatePrintBinary(n) {
     // Append "1" to s2 and enqueue it. Note that s2
     // contains the previous front
     q.push(s2 + "9");
+   
   }
 
   return smallestNumber;
 }
 
-// Driver program to test above function
-
 
 // var n = 5831;
 // let result = generatePrintBinary(n);
 // console.log('result:', result);
+
+
+
 
 // JavaScript program to find smallest multiple of
 // a given number made of digits 0 and 9 only
@@ -49,6 +53,8 @@ let vec = [];
 
 // Preprocessing function to generate
 // all possible numbers formed by 0 and 9
+
+
 function generateNumbersUtil(n) {
   let MAX_COUNT = 100000
 
@@ -81,6 +87,14 @@ function generateNumbersUtil(n) {
     q.push(s2)
   }
 
+}
+
+// function to find smallest number made
+// up of only digits 9’s and 0’s, which
+// is a multiple of n.
+
+function findSmallestMultiple(n) {
+
   // traverse the vector to find
   // the smallest multiple of n
   for (var i = 0; i < vec.length; i++)
@@ -90,20 +104,6 @@ function generateNumbersUtil(n) {
     if (parseInt(vec[i]) % n == 0)
       return vec[i]
 }
-// function to find smallest number made
-// up of only digits 9’s and 0’s, which
-// is a multiple of n.
-// function findSmallestMultiple(n) {
-
-//   // traverse the vector to find
-//   // the smallest multiple of n
-//   for (var i = 0; i < vec.length; i++)
-
-//     // int is used for string to
-//     // conversion
-//     if (parseInt(vec[i]) % n == 0)
-//       return vec[i]
-// }
 
 // Driver Code
 
@@ -115,11 +115,6 @@ function generateNumbersUtil(n) {
 // can be formed using digits 0 and
 // 9 and are less than 10^5
 
-// generateNumbersUtil()
-let n = 5831
-console.log(generateNumbersUtil(n))
-
-// This code is contributed by phasing17
-
-
-
+generateNumbersUtil()
+let n = 7
+console.log(findSmallestMultiple(n));

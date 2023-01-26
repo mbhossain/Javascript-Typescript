@@ -1,4 +1,4 @@
-let number = 5;
+let number = 888000000004;
 
 function facNum(num) {
     if (num >= 1) {
@@ -27,54 +27,39 @@ function fibNum(num) {
 // console.log('result:', result);
 
 let trackingArr = [];
+
 function hapNum(num) {
-    // const initialValue = num;
-    let sum = 0;
-    let flag = false;
     if (num >= 1) {
         //Convert number into array
         let numArr = Array.from(String(num), n => Number(n));
-        
+        let sum = 0;
         numArr.map(res => {
             sum += res * res;
         });
 
-        trackingArr.push(sum);
-        let length = trackingArr.length;
-
         if (sum == 1) {
             return number + ' is an Happy number';
         } else if (sum > 1) {
-            if (length > 0) {
-                
-                trackingArr.map(element => {
-                    if (element == sum) {
-                        flag = false;
-                        return number + ' is an Unhappy number';
-                        
+
+            if (sum == number) {
+                return number + ' is an Unhappy number';
+            } else {
+                let length = trackingArr.length;
+                if (length > 0) {
+                    for (let i = 0; i < length; i++) {
+                        if (sum == trackingArr[i]) {
+                            return number + ' is an Unhappy number';
+                        }
                     }
+                }
 
-                })
-                flag = true;
+                trackingArr.push(sum);
+                return hapNum(sum)
             }
-            // if (sum == number) {
-            //     return number + ' is an Unhappy number';
-            // } else {
-            //     return hapNum(sum);
-            // }
-
-        } else {
-            return hapNum(sum);
         }
     } else {
         return 'Please input an number >= 1';
     }
-
-    if (flag) {
-        return hapNum(sum);
-    }
-
-
 }
 
 let result = hapNum(number);

@@ -1,4 +1,4 @@
-let number = 888000000004;
+let number = 6;
 
 function facNum(num) {
     if (num >= 1) {
@@ -23,8 +23,8 @@ function fibNum(num) {
 
 }
 
-// let result = fibNum(number);
-// console.log('result:', result);
+let result1 = fibNum(number);
+console.log('result:', result1);
 
 let trackingArr = [];
 

@@ -1,4 +1,4 @@
-let number = 6;
+let number = 135;
 
 function facNum(num) {
     if (num >= 1) {
@@ -23,8 +23,8 @@ function fibNum(num) {
 
 }
 
-let result1 = fibNum(number);
-console.log('result:', result1);
+// let result1 = fibNum(number);
+// console.log('result:', result1);
 
 let trackingArr = [];
 
@@ -62,8 +62,8 @@ function hapNum(num) {
     }
 }
 
-let result = hapNum(number);
-console.log('result:', result);
+// let result = hapNum(number);
+// console.log('result:', result);
 
 
 //Convert number into array
@@ -81,3 +81,43 @@ let myArr2 = String(number).split("").map((num) => {
 let myArr3 = [...String(number)].reduce((acc, n) => acc.concat(+n), []);
 // console.log(myArr3)
 
+
+function returnNewSeriesSum(n) {
+    let sum = 0;
+    for (let i = 10; i <= n; i += 10) {
+        let numStr = i.toString().split('').reverse().join('');
+
+        for (let val of numStr) {
+            if (val === '0') {
+                sum += 1
+            } else {
+                break
+            }
+        }
+    }
+    return sum;
+}
+
+
+
+// let result = returnNewSeriesSum(number);
+// console.log('result:', result);
+
+function palidromNumber() {
+    let count = 0;
+
+    for (let i = 10000; i <= 99999; i++) {
+        let numStr = i.toString();
+        let numStrRev = i.toString().split('').reverse().join('');
+        if (numStr === numStrRev) {
+            console.log('numStr: ' + numStr + 'numStrRev: ' + numStrRev);
+            count += 1;
+        }
+
+    }
+    return count;
+}
+
+
+let result = palidromNumber();
+console.log('result:', result);

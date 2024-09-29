@@ -24,6 +24,6 @@ function D() {
 }
 
 // A > a, b, B(), C(), D()
-// B > a, b, c, B(), C(), D() 
-// C > a, b, d, B(), C(), D() 
+// B > a, b, c, B(), C(), D()
+// C > a, b, d, B(), C(), D()
 // D > a, n, A()

@@ -1,3 +1,12 @@
+const outputElement = document.getElementById('output');
+console.log = function (message) {
+    if (typeof message === 'object') {
+        outputElement.innerHTML += JSON.stringify(message, null, 2) + '\n';
+    } else {
+        outputElement.innerHTML += message + '\n';
+    }
+};
+
 let value = [];
 for (let i = 1; i <= 100000000; i++) { value.push(i) }
 
@@ -37,7 +46,7 @@ for (let i = 0; i < arr.length; i++) {
             arr[j] = temp;
         }
     }
-} 
+}
 
 // Driver code
 let x = 23456;

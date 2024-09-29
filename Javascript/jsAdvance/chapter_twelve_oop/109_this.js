@@ -1,34 +1,43 @@
-  var rect = {
-      width: 20,
-      height: 35,
+const outputElement = document.getElementById('output');
+console.log = function (message) {
+    if (typeof message === 'object') {
+        outputElement.innerHTML += JSON.stringify(message, null, 2) + '\n';
+    } else {
+        outputElement.innerHTML += message + '\n';
+    }
+};
 
-      draw: function() {
-          console.log('I am a Rectangle')
-          this.printProperties()
-          console.log(this)
-      },
-      printProperties: function() {
-          console.log('My width is: ' + this.width)
-          console.log('My height is: ' + this.height)
-      }
-  }
+var rect = {
+    width: 20,
+    height: 35,
 
-  rect.draw()
+    draw: function () {
+        console.log('I am a Rectangle')
+        this.printProperties()
+        console.log(this)
+    },
+    printProperties: function () {
+        console.log('My width is: ' + this.width)
+        console.log('My height is: ' + this.height)
+    }
+}
 
-  var another = {
-      width: 56,
-      height: 80,
+rect.draw()
 
-      print: rect.printProperties
-  }
+var another = {
+    width: 56,
+    height: 80,
 
-  console.log(another.print)
-  another.print()
+    print: rect.printProperties
+}
 
-  function myFunc() {
-      console.log(this)
-      rect.printProperties()
-  }
+console.log(another.print)
+another.print()
 
-  myFunc()
-      //   new myFunc()
+function myFunc() {
+    console.log(this)
+    rect.printProperties()
+}
+
+myFunc()
+//   new myFunc()

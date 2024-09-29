@@ -1,3 +1,12 @@
+const outputElement = document.getElementById('output');
+console.log = function (message) {
+  if (typeof message === 'object') {
+    outputElement.innerHTML += JSON.stringify(message, null, 2) + '\n';
+  } else {
+    outputElement.innerHTML += message + '\n';
+  }
+};
+
 // 001. Shuffle Array
 const shuffleArray = (arr) => arr.sort(() => Math.random() - 0.5);
 
@@ -20,22 +29,22 @@ console.log(getUnique(arr002));
 
 //004. Detect Dark Mode
 const isDarkMode = () =>
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches;
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches;
 
 // Testing
 console.log(isDarkMode());
 
 //005. Scroll To Top
 const scrollToTop = (element) =>
-    element.scrollIntoView({ behavior: "smooth", block: "start" });
+  element.scrollIntoView({ behavior: "smooth", block: "start" });
 
 //006. Scroll To Bottom
 const scrollToBottom = (element) =>
-    element.scrollIntoView({ behavior: "smooth", block: "end" });
+  element.scrollIntoView({ behavior: "smooth", block: "end" });
 
 //007. Generate Random Color
 const generateRandomHexColor = () =>
-    `#${Math.floor(Math.random() * 0xffffff).toString(16)}`;
+  `#${Math.floor(Math.random() * 0xffffff).toString(16)}`;
 
-document.querySelector("h1").style.color = generateRandomHexColor();
+document.querySelector("h3").style.color = generateRandomHexColor();

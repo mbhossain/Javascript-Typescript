@@ -1,3 +1,12 @@
+const outputElement = document.getElementById('output');
+console.log = function (message) {
+  if (typeof message === 'object') {
+    outputElement.innerHTML += JSON.stringify(message, null, 2) + '\n';
+  } else {
+    outputElement.innerHTML += message + '\n';
+  }
+};
+
 var number = [10, 20, 30, 40];
 //general for loop
 // for (x = 0; x < number.length; x++) {
@@ -50,10 +59,10 @@ var number = [10, 20, 30, 40];
 const letters = ['a', 'b', 'a', 'b', 'c', 'd', 'a', 'm', 'k', 'm'];
 let count = {};
 letters.forEach(item => {
-    if (count[item]) {
-        count[item]++;
-    } else {
-        count[item] = 1;
-    }
+  if (count[item]) {
+    count[item]++;
+  } else {
+    count[item] = 1;
+  }
 })
 console.log(count);

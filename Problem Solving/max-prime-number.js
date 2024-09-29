@@ -1,5 +1,14 @@
 // https://www.hackerrank.com/challenges/leonardo-and-prime/problem?isFullScreen=false
 
+const outputElement = document.getElementById('output');
+console.log = function (message) {
+  if (typeof message === 'object') {
+    outputElement.innerHTML += JSON.stringify(message, null, 2) + '\n';
+  } else {
+    outputElement.innerHTML += message + '\n';
+  }
+};
+
 const number = BigInt(500);
 
 function primeCount(n) {
@@ -81,7 +90,7 @@ function primeCount(n) {
 
       maxPrime *= counter;
       numberOfPrime++;
-      
+
       if (maxPrime > n) {
         numberOfPrime = numberOfPrime - 1;
         break;
@@ -96,4 +105,4 @@ function primeCount(n) {
 }
 
 let result = primeCount(number);
-console.log('result:', result);
+console.log(result);

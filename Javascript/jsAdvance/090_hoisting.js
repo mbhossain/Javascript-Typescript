@@ -16,7 +16,7 @@ print(a)
 // creational phase
 // a = undefind
 // newPrint = undefind
-// print = ref. 
+// print = ref.
 
 // executional phase
 // a = 100

@@ -1,5 +1,14 @@
 //https://www.hackerrank.com/challenges/handshake/problem?isFullScreen=true&h_r=next-challenge&h_v=zen
 
+const outputElement = document.getElementById('output');
+console.log = function (message) {
+  if (typeof message === 'object') {
+    outputElement.innerHTML += JSON.stringify(message, null, 2) + '\n';
+  } else {
+    outputElement.innerHTML += message + '\n';
+  }
+};
+
 let number = 4;
 
 function handshake(n) {
@@ -18,4 +27,4 @@ function handshake(n) {
 }
 
 let result = handshake(number);
-console.log('result:', result);
+console.log(result);

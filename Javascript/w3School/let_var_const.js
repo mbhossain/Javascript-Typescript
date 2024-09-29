@@ -1,3 +1,12 @@
+const outputElement = document.getElementById('output');
+console.log = function (message) {
+  if (typeof message === 'object') {
+    outputElement.innerHTML += JSON.stringify(message, null, 2) + '\n';
+  } else {
+    outputElement.innerHTML += message + '\n';
+  }
+};
+
 // function test() {
 //     for (var i = 0; i < 3; i++) {
 //         console.log("Hello World!");      // print HelloWorld! 3 times
@@ -20,6 +29,6 @@
 // console.log(color);
 
 if (true) {
-    const color = "purple"; // error found, use let also found error 
+  const color = "purple"; // error found, use let also found error 
 }
 console.log(color);

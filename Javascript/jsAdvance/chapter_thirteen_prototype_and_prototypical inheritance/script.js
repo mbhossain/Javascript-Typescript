@@ -1,3 +1,12 @@
+const outputElement = document.getElementById('output');
+console.log = function (message) {
+  if (typeof message === 'object') {
+    outputElement.innerHTML += JSON.stringify(message, null, 2) + '\n';
+  } else {
+    outputElement.innerHTML += message + '\n';
+  }
+};
+
 // function Person(name) {
 //     this.name = name
 // }
@@ -5,9 +14,9 @@
 // console.log(p1)
 
 var person = {
-        name: "M Belal"
-    }
-    // console.log(person)
+    name: "M Belal"
+}
+// console.log(person)
 
 // for (var i in person) {
 //     console.log(i)

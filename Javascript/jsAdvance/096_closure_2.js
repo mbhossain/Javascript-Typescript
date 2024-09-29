@@ -19,7 +19,7 @@
 function test() {
     var msg = 'I am learning lexical scope and closure'
 
-    return function() {
+    return function () {
         console.log(msg)
     }
 }

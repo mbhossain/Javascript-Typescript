@@ -1,3 +1,12 @@
+const outputElement = document.getElementById('output');
+console.log = function (message) {
+  if (typeof message === 'object') {
+    outputElement.innerHTML += JSON.stringify(message, null, 2) + '\n';
+  } else {
+    outputElement.innerHTML += message + '\n';
+  }
+};
+
 //Array Destructuring
 
 // const alphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
@@ -32,22 +41,22 @@
 // Object Destructuring
 
 const personOne = {
-    name: "Mohammad Belal",
-    age: 32,
-    favoriteFood: "Benana",
-    address: {
-        thana: "Kumarkhaly",
-        district: "Kushtia"
-    }
+  name: "Mohammad Belal",
+  age: 32,
+  favoriteFood: "Benana",
+  address: {
+    thana: "Kumarkhaly",
+    district: "Kushtia"
+  }
 }
 const personTwo = {
-    name: "Sadia",
-    age: 26,
-    fevoriteFood: "Watermelon",
-    address: {
-        thana: "Solokupa",
-        district: "Jenaidah"
-    }
+  name: "Sadia",
+  age: 26,
+  fevoriteFood: "Watermelon",
+  address: {
+    thana: "Solokupa",
+    district: "Jenaidah"
+  }
 }
 
 // const { name: firstName = 'Tonny', age, fevoriteFood = 'Rice' } = personTwo;
@@ -63,17 +72,17 @@ const personTwo = {
 // console.log(thana);
 
 const personThree = {
-    name: "Sadia",
-    age: 26,
-    fevoriteFood: "Watermelon",
+  name: "Sadia",
+  age: 26,
+  fevoriteFood: "Watermelon",
 }
 
 // const personFour = {...personOne, ...personThree }
 // console.log(personFour);
 
 function printUser({ name, age, favoriteFood = 'Orange' }) {
-    // console.log(user);
-    // console.log(`Name is: ${user.name} and Age is: ${user.age}`);
-    console.log(`Name is: ${name}, Age is: ${age} and Favorite food is: ${favoriteFood}`);
+  // console.log(user);
+  // console.log(`Name is: ${user.name} and Age is: ${user.age}`);
+  console.log(`Name is: ${name}, Age is: ${age} and Favorite food is: ${favoriteFood}`);
 }
 printUser(personOne);

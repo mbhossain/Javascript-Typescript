@@ -1,3 +1,12 @@
+const outputElement = document.getElementById('output');
+console.log = function (message) {
+  if (typeof message === 'object') {
+    outputElement.innerHTML += JSON.stringify(message, null, 2) + '\n';
+  } else {
+    outputElement.innerHTML += message + '\n';
+  }
+};
+
 //001. Capitalize the first letter of a string
 const capitalize = str => `${str.charAt(0).toUpperCase()}${str.slice(1)}`;
 console.log(capitalize("hello, you are a cool person!"));

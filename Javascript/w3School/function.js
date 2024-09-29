@@ -1,3 +1,12 @@
+const outputElement = document.getElementById('output');
+console.log = function (message) {
+    if (typeof message === 'object') {
+        outputElement.innerHTML += JSON.stringify(message, null, 2) + '\n';
+    } else {
+        outputElement.innerHTML += message + '\n';
+    }
+};
+
 // (function() { //Self-Invoking Functions
 //     console.log("Hi...I can invoke me!!");
 // })();
@@ -44,7 +53,7 @@
 // You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
 var l1 = [9, 9, 9, 9, 9, 9, 9];
 var l2 = [9, 9, 9, 9];
-var addTwoNumbers = function(l1, l2) {
+var addTwoNumbers = function (l1, l2) {
     // Head of the new linked list - this is the head of the resultant list
     let head = null;
     // Reference of head which is null at this point

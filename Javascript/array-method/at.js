@@ -1,3 +1,12 @@
+const outputElement = document.getElementById('output');
+console.log = function (message) {
+  if (typeof message === 'object') {
+    outputElement.innerHTML += JSON.stringify(message, null, 2) + '\n';
+  } else {
+    outputElement.innerHTML += message + '\n';
+  }
+};
+
 //Syntax: at(index)
 
 const array = [5, 12, 8, 130, 44];
@@ -37,7 +46,7 @@ console.log(item2); // Logs: 'orange'
 const colors = ['red', 'green', 'blue'];
 
 // Using length property
-const lengthWay = colors[colors.length-2];
+const lengthWay = colors[colors.length - 2];
 console.log(lengthWay); // Logs: 'green'
 
 // Using slice() method. Note an array is returned

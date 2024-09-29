@@ -1,13 +1,22 @@
+const outputElement = document.getElementById('output');
+console.log = function (message) {
+  if (typeof message === 'object') {
+    outputElement.innerHTML += JSON.stringify(message, null, 2) + '\n';
+  } else {
+    outputElement.innerHTML += message + '\n';
+  }
+};
+
 person = {
-        fname: "Mohammad",
-        lname: "Belal",
-        age: 32,
-        language: "Bangla",
-        // fullName: function() {
-        //     return this.fname + " " + this.lname
-        // }
-    }
-    // console.log(person.fullName());
+  fname: "Mohammad",
+  lname: "Belal",
+  age: 32,
+  language: "Bangla",
+  // fullName: function() {
+  //     return this.fname + " " + this.lname
+  // }
+}
+// console.log(person.fullName());
 
 // var detail = "";
 
@@ -59,17 +68,17 @@ person = {
 // object constructors
 
 function person_constructors(fname, lname, age, nationality) {
-    this.firstName = fname;
-    this.lastName = lname;
-    this.age = age;
-    this.nationality = nationality;
-    this.weight = "56 KG";
-    this.fullName = function() {
-        return this.firstName + " " + this.lastName
-    };
-    this.changeName = function(name) {
-        this.lastName = name;
-    };
+  this.firstName = fname;
+  this.lastName = lname;
+  this.age = age;
+  this.nationality = nationality;
+  this.weight = "56 KG";
+  this.fullName = function () {
+    return this.firstName + " " + this.lastName
+  };
+  this.changeName = function (name) {
+    this.lastName = name;
+  };
 }
 
 var myFather = new person_constructors("Motaleb", "Mridha", 56, "Bangladeshi");
@@ -101,8 +110,8 @@ console.log(myMother.lastName);
 person_constructors.prototype.eyeColor = " Black"; //object prototype
 console.log(myFather.eyeColor);
 
-person_constructors.prototype.realName = function() {
-    return this.firstName + " " + this.lastName;
+person_constructors.prototype.realName = function () {
+  return this.firstName + " " + this.lastName;
 };
 
 console.log(myMother.realName());

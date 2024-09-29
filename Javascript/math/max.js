@@ -1,3 +1,12 @@
+const outputElement = document.getElementById('output');
+console.log = function (message) {
+  if (typeof message === 'object') {
+    outputElement.innerHTML += JSON.stringify(message, null, 2) + '\n';
+  } else {
+    outputElement.innerHTML += message + '\n';
+  }
+};
+
 // let arr = [3, 5, 78, 23, 2, 9];
 
 // max() implementation
@@ -92,7 +101,7 @@ function arrayDestucturing(arr, noOfEl) {
     loopStartFrom += elementNo;
 
   }
-  console.log('newArr:', newArr);
+  console.log(newArr);
 }
 
 arrayDestucturing(number, 2);

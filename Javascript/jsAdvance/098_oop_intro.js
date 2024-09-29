@@ -20,11 +20,11 @@ var rect = {
     width: 10,
     height: 20,
 
-    calculateArea: function() {
+    calculateArea: function () {
         return this.width * this.height
     },
 
-    calculateRange: function() {
+    calculateRange: function () {
         return 2 * (this.width + this.height)
     }
 }

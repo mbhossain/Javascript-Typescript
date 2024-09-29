@@ -11,7 +11,7 @@ console.log(msg)
 console.log(gn('Atri'))
 
 function power(b) {
-    return function(n) {
+    return function (n) {
         var result = 1
         for (var i = 1; i <= b; i++) {
             result *= n

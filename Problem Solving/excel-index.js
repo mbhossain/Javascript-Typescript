@@ -1,3 +1,12 @@
+const outputElement = document.getElementById('output');
+console.log = function (message) {
+  if (typeof message === 'object') {
+    outputElement.innerHTML += JSON.stringify(message, null, 2) + '\n';
+  } else {
+    outputElement.innerHTML += message + '\n';
+  }
+};
+
 const number = 7000045869;
 
 function findExcelIndex(n) {
@@ -17,7 +26,7 @@ function findExcelIndex(n) {
       }
 
       newArr.unshift(nextN);
-    
+
       if (childN < 27) {
         newArr.unshift(childN);
       }
@@ -39,4 +48,4 @@ function findExcelIndex(n) {
 }
 
 let result = findExcelIndex(number);
-console.log('result:', result);
+console.log(result);

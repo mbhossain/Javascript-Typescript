@@ -3,7 +3,7 @@
 function a() {
     // console.log(x)
     var y = 5
-    return function() {
+    return function () {
         console.log(y)
     }
 }

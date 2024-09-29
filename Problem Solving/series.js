@@ -1,3 +1,12 @@
+const outputElement = document.getElementById('output');
+console.log = function (message) {
+    if (typeof message === 'object') {
+        outputElement.innerHTML += JSON.stringify(message, null, 2) + '\n';
+    } else {
+        outputElement.innerHTML += message + '\n';
+    }
+};
+
 let number = 135;
 
 function facNum(num) {
@@ -11,7 +20,7 @@ function facNum(num) {
 }
 
 // let result = facNum(number);
-// console.log('result:', result);
+// console.log(result);
 
 function fibNum(num) {
     if (num >= 3) {
@@ -24,7 +33,7 @@ function fibNum(num) {
 }
 
 // let result1 = fibNum(number);
-// console.log('result:', result1);
+// console.log(result1);
 
 let trackingArr = [];
 
@@ -63,7 +72,7 @@ function hapNum(num) {
 }
 
 // let result = hapNum(number);
-// console.log('result:', result);
+// console.log(result);
 
 
 //Convert number into array
@@ -101,7 +110,7 @@ function returnNewSeriesSum(n) {
 
 
 // let result = returnNewSeriesSum(number);
-// console.log('result:', result);
+// console.log(result);
 
 function palidromNumber() {
     let count = 0;
@@ -120,4 +129,4 @@ function palidromNumber() {
 
 
 let result = palidromNumber();
-console.log('result:', result);
+console.log(result);

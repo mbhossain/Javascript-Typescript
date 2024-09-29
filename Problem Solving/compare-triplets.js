@@ -1,5 +1,14 @@
 // https://www.hackerrank.com/challenges/compare-the-triplets/problem?isFullScreen=true&h_r=next-challenge&h_v=zen
 
+const outputElement = document.getElementById('output');
+console.log = function (message) {
+  if (typeof message === 'object') {
+    outputElement.innerHTML += JSON.stringify(message, null, 2) + '\n';
+  } else {
+    outputElement.innerHTML += message + '\n';
+  }
+};
+
 const a = [1, 2, 3];
 const b = [3, 2, 1];
 
@@ -14,7 +23,7 @@ function compareTriplets(a, b) {
     for (let j = index; j < length; j++) {
       if (a[i] > b[j]) {
         alicePoint += 1;
-      } else if(a[i] < b[j]) {
+      } else if (a[i] < b[j]) {
         bobPoint += 1;
       }
       index += 1;
@@ -28,4 +37,4 @@ function compareTriplets(a, b) {
 }
 
 let result = compareTriplets(a, b);
-console.log('result:', result);
+console.log(result);

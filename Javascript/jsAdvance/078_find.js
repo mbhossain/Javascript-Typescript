@@ -18,7 +18,7 @@ function myFind(arr, cb) {
         }
     }
 }
-var result = myFind(arr, function(val) {
+var result = myFind(arr, function (val) {
     return val == 12
 })
 console.log(result)

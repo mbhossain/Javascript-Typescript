@@ -1,6 +1,13 @@
+const outputElement = document.getElementById('output');
+console.log = function (message) {
+  if (typeof message === 'object') {
+    outputElement.innerHTML += JSON.stringify(message, null, 2) + '\n';
+  } else {
+    outputElement.innerHTML += message + '\n';
+  }
+};
+
 // Javascript implementation of QuickSort
-
-
 // A utility function to swap two elements
 function swap(arr, i, j) {
   let temp = arr[i];

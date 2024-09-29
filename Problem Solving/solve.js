@@ -1,12 +1,20 @@
 // JavaScript program to generate binary numbers from 1 to n
 // This function uses queue data structure to print binary numbers
+const outputElement = document.getElementById('output');
+console.log = function (message) {
+  if (typeof message === 'object') {
+    outputElement.innerHTML += JSON.stringify(message, null, 2) + '\n';
+  } else {
+    outputElement.innerHTML += message + '\n';
+  }
+};
 
 function generatePrintBinary(n) {
 
   // Create an empty queue of strings
   let smallestNumber;
   var q = [];
-  
+
   // Enqueue the first binary number
   q.push("9");
 
@@ -33,7 +41,7 @@ function generatePrintBinary(n) {
     // Append "1" to s2 and enqueue it. Note that s2
     // contains the previous front
     q.push(s2 + "9");
-   
+
   }
 
   return smallestNumber;
@@ -42,7 +50,7 @@ function generatePrintBinary(n) {
 
 // var n = 5831;
 // let result = generatePrintBinary(n);
-// console.log('result:', result);
+// console.log(result);
 
 
 

@@ -1,3 +1,12 @@
+const outputElement = document.getElementById('output');
+console.log = function (message) {
+  if (typeof message === 'object') {
+    outputElement.innerHTML += JSON.stringify(message, null, 2) + '\n';
+  } else {
+    outputElement.innerHTML += message + '\n';
+  }
+};
+
 //01 - Get a random boolean
 const getRandomBoolean = () => Math.random() >= 0.5;
 console.log(getRandomBoolean());
@@ -38,22 +47,22 @@ console.log(foo, bar);
 
 // 08 - Get the actual type of javascript primitives
 const trueTypeOf = (obj) => {
-    return Object.prototype.toString.call(obj).slice(8, -1).toLowerCase();
-  };
-  
-  console.log(trueTypeOf(''));
-  // string
-  console.log(trueTypeOf(0));
-  // number
-  console.log(trueTypeOf());
-  // undefined
-  console.log(trueTypeOf(null));
-  // null
-  console.log(trueTypeOf({}));
-  // object
-  console.log(trueTypeOf([]));
-  // array
-  console.log(trueTypeOf(0));
-  // number
-  console.log(trueTypeOf(() => {}));
-  // function
+  return Object.prototype.toString.call(obj).slice(8, -1).toLowerCase();
+};
+
+console.log(trueTypeOf(''));
+// string
+console.log(trueTypeOf(0));
+// number
+console.log(trueTypeOf());
+// undefined
+console.log(trueTypeOf(null));
+// null
+console.log(trueTypeOf({}));
+// object
+console.log(trueTypeOf([]));
+// array
+console.log(trueTypeOf(0));
+// number
+console.log(trueTypeOf(() => { }));
+// function

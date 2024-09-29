@@ -1,5 +1,14 @@
 //https://www.hackerrank.com/challenges/p1-paper-cutting/problem?isFullScreen=false
 
+const outputElement = document.getElementById('output');
+console.log = function (message) {
+  if (typeof message === 'object') {
+    outputElement.innerHTML += JSON.stringify(message, null, 2) + '\n';
+  } else {
+    outputElement.innerHTML += message + '\n';
+  }
+};
+
 // const row = 689715240;
 // const column = 759842301;
 
@@ -30,7 +39,7 @@ function restaurant(l, b) {
       }
     }
     arr.reverse();
-    console.log('arr:', arr);
+    console.log(arr);
     let length = arr.length;
 
     for (let j = 0; j < length; j++) {
@@ -49,7 +58,7 @@ function restaurant(l, b) {
 
 
 // let result = solve(row, column);
-// console.log('result:', result);
+// console.log(result);
 
 let result = restaurant(344, 734);
-console.log('result:', result);
+console.log(result);
